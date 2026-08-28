@@ -213,16 +213,19 @@
     display:flex;
     flex-direction:column;
     line-height:1.15;
+    gap: 5px;
     flex-shrink:0;
   }
   .brand strong{
     font-family: var(--font-head);
     font-weight: 800;
     font-size: 1.12rem;
+    line-height: 1.1;
     color: var(--navy);
   }
   .brand span{
     font-size: 0.7rem;
+    line-height: 1.1;
     color: var(--muted);
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -678,32 +681,6 @@
   @media (min-width: 1100px){ .why-grid{ grid-template-columns: repeat(4,1fr); } }
 
   /* ============================================================
-     TESTIMONIALS
-  ============================================================ */
-  .testi-grid{ display:grid; grid-template-columns:1fr; gap:20px; }
-  .testi-card{
-    background: var(--white);
-    border-radius: var(--radius-m);
-    padding: 32px 28px;
-    border: 1px dashed rgba(7,59,104,0.22);
-    position:relative;
-  }
-  .testi-card .quote-icon{ color: var(--accent); opacity:0.5; width:30px; height:30px; margin-bottom:16px; }
-  .testi-card blockquote{
-    margin:0; font-style: italic; color: var(--muted); font-size:1rem; line-height:1.7;
-  }
-  .testi-footer{ display:flex; align-items:center; justify-content:space-between; margin-top:22px; padding-top:18px; border-top:1px solid rgba(7,59,104,0.08); }
-  .testi-name{ font-family: var(--font-head); font-weight:700; color: var(--navy); font-size:0.92rem; }
-  .testi-type{ font-size:0.78rem; color: var(--muted); }
-  .testi-badge{
-    position:absolute; top:-11px; right:22px;
-    background: var(--navy); color:#fff; font-size:0.68rem; font-weight:700;
-    letter-spacing:0.05em; text-transform:uppercase;
-    padding: 5px 12px; border-radius:100px;
-  }
-  @media (min-width: 900px){ .testi-grid{ grid-template-columns: repeat(3,1fr); } }
-
-  /* ============================================================
      FAQ
   ============================================================ */
   .faq-list{ max-width: 800px; }
@@ -957,7 +934,6 @@
         <li><a href="#conditions" data-nav>Conditions</a></li>
         <li><a href="#services" data-nav>Services</a></li>
         <li><a href="#approach" data-nav>Approach</a></li>
-        <li><a href="#testimonials" data-nav>Testimonials</a></li>
         <li><a href="#faq" data-nav>FAQ</a></li>
         <li><a href="#contact" data-nav>Contact</a></li>
       </ul>
@@ -984,7 +960,6 @@
   <a href="#conditions" data-nav>Conditions</a>
   <a href="#services" data-nav>Services</a>
   <a href="#approach" data-nav>Approach</a>
-  <a href="#testimonials" data-nav>Testimonials</a>
   <a href="#faq" data-nav>FAQ</a>
   <a href="#contact" data-nav>Contact</a>
   <div class="mobile-actions">
@@ -1283,49 +1258,6 @@
         <div class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#icon-compass"/></svg></div>
         <h3>Better Movement. Better Life.</h3>
         <p>The goal is not simply to reduce discomfort — it is to help you return to what you love.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     TESTIMONIALS
-============================================================ -->
-<section class="section section--soft" id="testimonials">
-  <div class="container">
-    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
-      <span class="eyebrow">Testimonials</span>
-      <h2>What patients say.</h2>
-      <p>Real patient stories will appear here soon.</p>
-    </div>
-
-    <div class="testi-grid reveal-stagger">
-      <div class="testi-card">
-        <span class="testi-badge">Coming Soon</span>
-        <svg class="quote-icon" aria-hidden="true"><use href="#icon-quote"/></svg>
-        <blockquote>Verified patient testimonial will be added here.</blockquote>
-        <div class="testi-footer">
-          <span class="testi-name">— Patient Name</span>
-          <span class="testi-type">Treatment: —</span>
-        </div>
-      </div>
-      <div class="testi-card">
-        <span class="testi-badge">Coming Soon</span>
-        <svg class="quote-icon" aria-hidden="true"><use href="#icon-quote"/></svg>
-        <blockquote>Verified patient testimonial will be added here.</blockquote>
-        <div class="testi-footer">
-          <span class="testi-name">— Patient Name</span>
-          <span class="testi-type">Treatment: —</span>
-        </div>
-      </div>
-      <div class="testi-card">
-        <span class="testi-badge">Coming Soon</span>
-        <svg class="quote-icon" aria-hidden="true"><use href="#icon-quote"/></svg>
-        <blockquote>Verified patient testimonial will be added here.</blockquote>
-        <div class="testi-footer">
-          <span class="testi-name">— Patient Name</span>
-          <span class="testi-type">Treatment: —</span>
-        </div>
       </div>
     </div>
   </div>
